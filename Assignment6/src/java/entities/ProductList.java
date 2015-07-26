@@ -118,7 +118,7 @@ public class ProductList {
         Connection conn = null;
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            String jdbc = "jdbc:mysql://localhost/fastenlt";
+            String jdbc = "jdbc:mysql://localhost/Products";
             conn = (Connection) DriverManager.getConnection(jdbc, "root", "");
         } catch (ClassNotFoundException ex) {
             Logger.getLogger(ProductList.class.getName()).log(Level.SEVERE, null, ex);
